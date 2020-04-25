@@ -34,6 +34,7 @@ body{
     background: #1a1a1a;
     margin-right: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 .parallax1{
     background: url('BG4.png');
@@ -410,9 +411,18 @@ body::-webkit-scrollbar-track{
   display: grid;
   gap : 1.5rem;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-top: 1rem;
   margin-right: 2rem;
+  font-family: 'Acme',sans-serif;
+}
+.top-grid3{
+  display: grid;
+  gap : 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden;
   font-family: 'Acme',sans-serif;
 }
 .card-title{
@@ -455,8 +465,6 @@ border-top-right-radius: 2.5mm;
   grid-template-rows: 150px 160px;
   grid-template-areas: "img" "txt";
   border-radius: 18px;
-
-
   font-family: 'Acme',sans-serif;
   text-align: center;
   width: 250px;
@@ -467,9 +475,6 @@ border-top-right-radius: 2.5mm;
   overflow: auto;
  }
  @media screen and (min-width: 700px) {
-.cardss{
-  margin:30px 50%;
-}
  }
  .cardss1{
   background: rgb(106, 73, 138);
@@ -766,6 +771,7 @@ iframe{
     background-size: cover;
     margin-bottom: 0;
     padding-bottom: 0;
+    background-color: #394040;
 }
 </style>
 
@@ -810,17 +816,10 @@ iframe{
         <main>
          <div class="parallax1">
            <div class="paratxt">
-               <h1 class="pcontxt clg" >COMPUTER SCIENCE AND ENGINEERING</h1><br>
+               <h1 class="pcontxt clg" data-aos="fade-up">COMPUTER SCIENCE AND ENGINEERING</h1><br>
                <p class="par" data-aos="fade-up">THIAGARAR COLLEGE OF ENGINEERING</p><br><br><br>
-               <p class="quote" style="color:white; letter-spacing:1.6px" >-Where quality and ethics matter.</p>
+               <p class="quote" style="color:white; letter-spacing:1.6px" data-aos="fade-up">-Where quality and ethics matter.</p>
            </div>
-           <!-- <div class="clouds">
-            <img src="cloud1.png" style="--i:1">
-            <img src="cloud2.png" style="--i:2">
-            <img src="cloud3.png" style="--i:3">
-            <img src="cloud4.png" style="--i:4">
-            <img src="cloud5.png" style="--i:5">
-        </div> -->
          </div>
          <br><br><br>
           <div class="vis">
@@ -834,10 +833,12 @@ iframe{
       <br><br><br>
           </div>
          <div class="parallax4">
-         <div class="vis">
+         <div class="vis" style="margin-bottom: 13%;">
            <h3 style="color: #fff;" data-aos="fade-up">ASSOCIATIONS IN CSE DEPARTMENT</h3><br>
            <p style="text-align: center;" data-aos="fade-up">The Awesome associations offered by TCE</p>
          </div>
+         <br>
+         <br>
          </div>
          <div class="p1con"><center>
             <section class="top-grid"  data-aos="fade-up">
@@ -964,11 +965,11 @@ iframe{
 
        <div class="parallax6">
         <br><br><br>
-         <div class="vis" data-aos="fade-up"><h3 style="color: #fff;">Special Interest Groups</h3><br><p style="color: white; font-weight:bold;padding-bottom: 5%;">Be a successor with our SIG's</p><br><br></div>
+         <div class="vis" data-aos="fade-up"><h3 style="color: #fff;">Special Interest Groups</h3><br><p style="color: white; font-weight:bold;padding-bottom: 5%;"  style="padding-bottom: 15%;">Be a successor with our SIG's</p><br><br></div>
         </div>
-
-        <div class="p2con"><center>
-          <section class="top-grid2" data-aos="fade-up">
+        <div>
+          <center>
+          <section class="top-grid3">
             <div class="cardss cardss1"  >
                <div class="cardss-image11"></div>
                <div class="cardss-text">
@@ -986,13 +987,7 @@ iframe{
                <div class="cardss-text">
                 <h2>Networks and<br>Security</h2>
               </div>
-            </div><br>
-          <!-- </section></center>
-       </div>
-
-        <div class="p2con" data-aos="fade-up"> -->
-
-          <!-- <section class="top-grid2"> -->
+            </div>
             <div class="cardss cards4">
                <div class="cardss-image14"></div>
                <div class="cardss-text">
@@ -1005,11 +1000,12 @@ iframe{
                 <h2>Artificial<br>Intelligence</h2>
               </div>
             </div>
-            </section></center>
-       </div>
+            </section>
+            </center>
+        </div>
         <div class="parallax5" id="ab">
         <br><br><br>
-         <div  class="vis" data-aos="fade-up"><h3 style="color: #fff;">About US</h3><br></div>
+         <div  class="vis" data-aos="fade-up"><h3 style="color: #fff;margin-bottom: 14%;">About US</h3><br></div>
         </div>
 
         <div class="p2con" data-aos="fade-up">
